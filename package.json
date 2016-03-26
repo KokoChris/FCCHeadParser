@@ -10,6 +10,7 @@
   "author": "kokoc",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-useragent": "^0.2.4"
   }
 }
