@@ -13,7 +13,7 @@ app.get("/", function(req, res) {
         browser: req.useragent.browser,
         OS: req.useragent.os,
         language: req.headers["accept-language"],
-        clientIp: req.connection.remoteAddress,
+        clientIp: req.ip,
     }
 
 
