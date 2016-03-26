@@ -12,7 +12,7 @@ app.get("/", function(req, res) {
     var metadata = {
         browser: req.useragent.browser,
         OS: req.useragent.os,
-        language: req.headers["accept-language"],
+        language: req.headers["accept-language"].split(",")[0],
         clientIp: req.headers['x-forwarded-for'] || req.connection.remoteAddress
     }
 
